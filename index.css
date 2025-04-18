@@ -1,12 +1,19 @@
-* {
-  margin: 0;
-  padding: 0;
+
+html, body {
+  overflow-x: hidden;
+  width: 100%; 
 }
 
-body {
+body{
   background-color: black;
-  overflow-x: hidden;
-  width: 100%;
+}
+
+* {
+  max-width: 100%; 
+}
+
+.container,.flex-container,.grid-container{
+  max-width: 100%;
 }
 
 main {
@@ -140,8 +147,7 @@ main {
   height: 30vh;
   width: 65vh;
   text-align: center;
-  /* position: relative;
-  z-index: 1; */
+
 }
 
 .usertype {
@@ -187,6 +193,7 @@ main {
   height: 1rem;
   width: 1.5rem;
   margin-left: 0.4rem;
+
 }
 
 .middle h1 {
@@ -203,6 +210,7 @@ main {
   font-size: 1rem;
   margin-bottom: 2rem;
   color: white;
+  filter: brightness(120%);
 }
 
 .middle h3 {
@@ -211,7 +219,7 @@ main {
   line-height: 1.5;
   color: rgb(255, 255, 255);
   font-family: sans-serif;
-  filter: brightness(140%);
+  filter: brightness(150%);
 }
 
 .otherhalf {
@@ -261,35 +269,37 @@ main {
   flex-shrink: 0;
   position: relative;
   z-index: 1;
-padding: 0px 1rem 0px 1rem;
+  padding: 0px 1rem 0px 0.5rem;
 }
 
 .div1 {
   height: 32vh;
-  width: 13vw;
+  width: 12.5vw;
   border-radius: 1rem;
   background-image: url("https://occ-0-3647-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABTixI7Cz0HVkuB1KQvyT9xedX83h2ob_PwNRW74psOcCGFKugKnc9ErhsaNh6JyyjGFS7ZLrxafx7yAkgdqlsT2kP9b0oGHIRnY.jpg");
   background-size: cover;
+
 }
 
 .bee:hover {
   cursor: pointer;
-  transform: scale(1.05);
-  transition: transform 0.160s 0s ease-in;
-  object-fit: fill;
+  transform: scale(1.035);
+  transition: transform 0.145s 0s ease-in;
+  /* object-fit: fill; */
 }
 
 .div2 {
   height: 32vh;
-  width: 13vw;
+  width: 12.5vw;
   border-radius: 1rem;
   background-image: url("https://occ-0-3647-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABZMosKxdFgxev7W1YxooOu2wL_Kc3LwyYduCJ8nKme-kSdFXzCIRaMV4kYchreILRl6izcs-TrvJJCatDPe_vPwJ-wR6Zjk6yHTOXTM767pKfIrjgSGm5iTT5QFzgN6xjheO.jpg?r=06c");
   background-size: cover;
+  
 }
 
 .div3 {
   height: 32vh;
-  width: 13vw;
+  width: 12.5vw;
   background-image: url("https://occ-0-3647-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABdtI3qpl44Mqt3cF7fLUeETUD2gmqPcRyZltCa4p2nJhI04eMY8JQ-mP4gqNZEc2ORSotMR3FJgelqWI29fe_k_2c3koayQSnCo.jpg");
   background-size: cover;
   border-radius: 1rem;
@@ -297,7 +307,7 @@ padding: 0px 1rem 0px 1rem;
 
 .div4 {
   height: 32vh;
-  width: 13vw;
+  width: 12.5vw;
   background-image: url("https://occ-0-3647-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABekiNDenmaH59VF_CNbIt12A2Ta-WdfxsRNVU-K6nHjGnJZGRw_QkCAbbup2vt_To4LgOM2cbp2-GwcOWHXUSn9bBVfuY9ZrUE9aO93Ux_IlxCfQp_WNjJjnBumUFxyCYCgy.jpg?r=f85");
   background-size: cover;
   border-radius: 1rem;
@@ -305,7 +315,7 @@ padding: 0px 1rem 0px 1rem;
 
 .div5 {
   height: 33vh;
-  width: 13vw;
+  width: 12.5vw;
   background-size: cover;
   border-radius: 1rem;
   background-image: url("https://occ-0-3647-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABX_xNOTBmGu3FZRr6uHRjt3XCQ0dvrWRpoxG6bM0pvzWyd0RmEM0nE6zC_dL2mSOxnDH35pNkSGSEQImCrYiHvRe83p0HqknTms.jpg");
@@ -313,35 +323,35 @@ padding: 0px 1rem 0px 1rem;
 
 .div6 {
   height: 32vh;
-  width: 13vw;
+  width: 12.5vw;
   background-image: url("https://occ-0-3647-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABTdnFjmF1Xxz-CivzBCGsloKXAlyEUuwYGqIE1tNTOMTopTqb7gFmlKf_RfSueia_pXjM9SFtzwBCgGMGSAexcI2JGAcWIPgKHhrgOMi3_NfKUFTON8ofe-nhlJ4uDnA3SGM.jpg");
   background-size: cover;
   border-radius: 1rem;
 }
 .div7 {
   height: 32vh;
-  width: 13vw;
+  width: 12.5vw;
   background-image: url("https://occ-0-3647-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABbZDakL7B7gFm7kcXQq_hxcJuDpHT8ayaajaSyJOeNpfiEIIVlB7P5QvlWStSGL2kfLtPXdhLUUovsIJ3WVtNZlktUfVAMf4R-g.jpg");
   background-size: cover;
   border-radius: 1rem;
 }
 .div8 {
   height: 32vh;
-  width: 13vw;
+  width: 12.5vw;
   background-image: url("https://occ-0-3647-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABUx9Tyz3zGpCfUdZAl9M6ybi6vF_AYbqOxoWN8yrwkZ9L8fwoQqubnUBpI9yq9UwcTwi1Xpol-pMQY7pzAJvsSHy155uCJSuCQs.jpg");
   background-size: cover;
   border-radius: 1rem;
 }
 .div9 {
   height: 32vh;
-  width: 13vw;
+  width: 12.5vw;
   background-image: url("https://occ-0-3647-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABUEGRIx8pMkzIHvS6XmVZgzHYZMG2dIBRVOVc3UXSqbxdOEjKzVBpEWQMUAnSyYy8jTsT6z7eIevymQ1FUCKMQa8UJGMD51Z_noJTVhLAwNamAYy4Iyxhh4gY-cjE0l-skj_.jpg");
   background-size: cover;
   border-radius: 1rem;
 }
 .div10 {
   height: 32vh;
-  width: 13vw;
+  width: 12.5vw;
   background-image: url("https://occ-0-3647-3646.1.nflxso.net/dnm/api/v6/mAcAr9TxZIVbINe88xb3Teg5_OA/AAAABYGTGD-fxq0DEV1gNw-skG1_on4ZqYHYWgmiglVmf-l445vJs-lHgrjJ0SF11rpCQbm4jZx60OfB-w3pLtc8Y3ojBuleqdHUP18.jpg");
   background-size: cover;
   border-radius: 1rem;
@@ -358,7 +368,7 @@ padding: 0px 1rem 0px 1rem;
     rgba(184, 40, 105, 1),
     rgba(33, 13, 22, 1) 84%
   );
-
+  border-radius:90% 90% 0% 0%;
 
 }
 
@@ -373,6 +383,9 @@ padding: 0px 1rem 0px 1rem;
       rgba(0, 0, 0, 0.1) 100%
     ),
     black;
+
+    
+    
 }
 
 .bee {
@@ -383,6 +396,7 @@ padding: 0px 1rem 0px 1rem;
   width: 14vw;
   position: relative;
   z-index: 10;
+ 
 }
 
 .bee span {
@@ -399,9 +413,11 @@ padding: 0px 1rem 0px 1rem;
   margin-top: 10rem;
   text-shadow: 0 0 1.5rem rgba(27, 26, 26, 0.5);
 }
-#sidebutton {
+
+
+#sbtn1{
   height: 7.5rem;
-  width: 1.5rem;
+  width: 1.9rem;
   border-radius: 0.5rem;
   border: none;
   color: rgba(255, 255, 255, 0.7);
@@ -409,10 +425,37 @@ padding: 0px 1rem 0px 1rem;
   align-items: center;
   cursor: pointer;
   margin-bottom: 6rem;
-  margin-left: -3rem;
+  position: absolute;
+  z-index: 5;
+  right:75.7vw;
+  display: none;
+}
+
+#sbtn1:hover{
+  background-color: #474646;
+
+}
+
+#sbtn2:hover{
+  background-color: #474646;
+}
+
+
+
+#sbtn2 {
+  height: 7.5rem;
+  width: 1.9rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.1);
+   align-items: center; 
+  cursor: pointer;
+  margin-bottom: 6rem;
   position: absolute;
   z-index: 5;
   right: -4rem;
+  
 }
 
 .why {
@@ -461,7 +504,7 @@ padding: 0px 1rem 0px 1rem;
 .style {
   display: flex;
   flex-direction: column;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   height: 80%;
   width: 100%;
 }
@@ -483,7 +526,7 @@ padding: 0px 1rem 0px 1rem;
   font-weight: 500;
   color: white;
   text-align: start;
-  margin-left: 1rem;
+  margin:0rem 0rem 0rem 1rem;
   
 }
 
@@ -494,7 +537,7 @@ padding: 0px 1rem 0px 1rem;
 }
 
 .para p {
-  margin-left: 1rem;
+  margin: 0rem 0rem 0rem 1rem;
 }
 
 .data {
@@ -596,10 +639,10 @@ padding: 0px 1rem 0px 1rem;
 .queries {
 
     display: flex;
-    align-items: center; /* Align items properly */
+    align-items: center; 
     height: auto;
     width: 100vw;
-    gap: 35%; /* This will now work */
+    gap: 35%;
 
 }
 
@@ -653,6 +696,7 @@ padding: 0px 1rem 0px 1rem;
   gap: 0.5rem;
   width: 68vw;
   margin-left: 1rem;
+  margin-top: -1.5rem;
 }
 
 #ten input {
@@ -725,7 +769,6 @@ a {
   margin-top: 0rem;
   display: flex;
   flex-direction: column;
-
   height: 20vh;
   gap: 10%;
   font-size: 0.875rem;
@@ -773,53 +816,224 @@ a {
 }
 
 
-@media (max-width: 768px) {
-  .middle h1 {
-    font-size: 2.5rem;
-  }
 
-  .middle p {
-    font-size: 0.9rem;
-  }
+/* Existing CSS remains the same until the end */
 
-  .middle h3 {
-    font-size: 0.9rem;
-  }
+/* ========== Responsive Styles ========== */
 
-  .usertype {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-
-  .usertype input {
-    width: 80%;
-  }
-
-  .usertype button {
-    width: 80%;
-  }
-
-  .things {
-    gap: 1rem;
-  }
-
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
   .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .div10 {
-    width: 20vw;
+    width: 16vw;
   }
+  
+  .bee {
+    width: 18vw;
+  }
+}
 
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  #header {
+    width: 90vw;
+  }
+  
+  .middle {
+    width: 80vw;
+  }
+  
+  .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .div10 {
+    width: 22vw;
+  }
+  
+  .bee {
+    width: 24vw;
+  }
+  
   .info {
     flex-direction: column;
     height: auto;
   }
-
+  
   .box1 {
+    margin-bottom: 1rem;
+  }
+  
+  .q2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  main, #box {
+    height: 70vh;
+  }
+  
+  .middle h1 {
+    font-size: 2.5rem;
+  }
+  
+  .usertype {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
     width: 100%;
+  }
+  
+  .usertype input {
+    width: 100%;
+  }
+  
+  .usertype button {
+    width: 100%;
+  }
+  
+  .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .div10 {
+    width: 30vw;
+    height: 25vh;
+  }
+  
+  .bee {
+    width: 32vw;
+    height: 27vh;
+  }
+  
+  #sbtn1, #sbtn2 {
+    height: 5.5rem;
+  }
+  
+  .queries {
+    gap: 20%;
+  }
+  
+  #ten {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #ten input {
+    width: 100%;
+  }
+  
+  .butt {
+    width: 100%;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  main, #box {
+    height: 60vh;
+  }
+  
+  #layout1 {
+    width: 40vw;
+  }
+  
+  #layout2 {
+    width: 50vw;
+  }
+  
+  .middle h1 {
+    font-size: 2rem;
+  }
+  
+  .middle p, .middle h3 {
+    font-size: 0.9rem;
+  }
+  
+  .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .div10 {
+    width: 45vw;
+    height: 20vh;
+  }
+  
+  .bee {
+    width: 47vw;
+    height: 22vh;
+  }
+  
+  .bee span {
+    font-size: 4.5rem;
+  }
+  
+  .queries h3 {
+    font-size: 1.2rem;
+    width: 60vw;
+  }
+  
+  .queries svg {
+    height: 1.8rem;
+    width: 2.5rem;
+  }
+  
+  .b1, .b2, .b3, .b4, .b5, .b6 {
+    height: 4rem;
+    padding: 1rem;
+  }
+  
+  .page span {
+    font-size: 1.2rem;
+  }
+  
+  .q2 {
+    grid-template-columns: 1fr;
+  }
+  
+  .q2-items {
+    height: auto;
+    gap: 0.5rem;
     margin-bottom: 1rem;
   }
 
-  .Questions {
-    height: auto;
+  .footer{
+    margin-top: 7rem;
+  }
+}
+
+
+@media (max-width: 399.98px) {
+  #layout1 {
+    margin-left: 8px;
+  }
+  
+  #layout2 {
+    gap: 0.3rem;
+  }
+  
+  #form {
+    width: 6.5rem;
+  }
+  
+  #bottom1 {
+    width: 6.5rem;
+    font-size: 0.9rem;
+  }
+  
+  #layout2 button {
+    width: 4rem;
+    font-size: 0.8rem;
+  }
+  
+  .middle h1 {
+    font-size: 1.8rem;
+  }
+  
+  .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .div10 {
+    width: 55vw;
+    height: 18vh;
+  }
+  
+  .bee {
+    width: 57vw;
+    height: 20vh;
+  }
+  
+  .queries h3 {
+    font-size: 1rem;
   }
 
+  .footer{
+    margin-top: 10rem;
+  }
 }

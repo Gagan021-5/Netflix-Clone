@@ -9,8 +9,7 @@ const btn6 = document.querySelector(".b6");
 let info = document.querySelectorAll(".page");
 let down = document.querySelector(".foot");
  
-
-
+//Eventlisteners
 btn1.addEventListener('click',give);
 btn2.addEventListener('click',give);
 btn3.addEventListener('click',give);
@@ -19,7 +18,7 @@ btn5.addEventListener('click',give);
 btn6.addEventListener('click',give);
 
 
-
+//questions boxes
 function give() {
      info.forEach(ans => {
         
@@ -44,48 +43,51 @@ function give() {
          element.style.display = "none";
          down.style.marginTop ="0rem";
       
-        
      }
-
-
     }
 
      
 
- 
-
- 
-
+ //sidebuttons 
  const boxes = document.querySelectorAll(".things");
- const butt = document.querySelector("#sidebutton"); 
+ const butt2 = document.querySelector("#sbtn2");
+ const  butt1 = document.querySelector("#sbtn1"); 
+ 
 
- butt.addEventListener("click", () => {
+ 
+ butt1.addEventListener("click", () => {
     boxes.forEach((box) => {
-        box.scrollBy({ left: 1250, behavior: "smooth" }); 
+        box.scrollBy({ left: -1250, behavior: "smooth" }); 
+       
     });
+   
+        butt1.style.display="none";
+        butt2.style.display ="block";
+        
+       
 });
 
 
- const createbutton=()=>{
-     const butt2 = document.createElement("button"); 
-     butt2.class ="button2";
-    
-    //  butt2.height: 7.5rem;
-    //  butt2.width: 1.5rem;
-    //  butt2.border-radius: 0.5rem;
-    //  butt2.border: none;
-    //  butt2.color rgba(255, 255, 255, 0.7);
-    //  butt2. background-color: rgba(255, 255, 255, 0.1);
-    //  butt2.  align-items: center;
-    //  butt2. cursor: pointer;
-    //  butt2.  margin-bottom: 6rem;
-    //  butt2.  margin-left: -3rem;
-    //  butt2.  position: absolute;
-    //  butt2.  z-index: 5;
-    //  butt2. left: 0; 
-    
 
- }
-    
+ butt2.addEventListener("click", () => {
+    boxes.forEach((box) => {
+        box.scrollBy({ left: 1250, behavior: "smooth" });            
+    });    
+    butt2.style.display="none";
+    butt1.style.display ="block";
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
 
 
