@@ -817,11 +817,8 @@ a {
 
 
 
-/* Existing CSS remains the same until the end */
+ /* Responsive Styles  */
 
-/* ========== Responsive Styles ========== */
-
-/* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
   .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8, .div9, .div10 {
     width: 16vw;
@@ -832,7 +829,7 @@ a {
   }
 }
 
-/* Medium devices (tablets, less than 992px) */
+
 @media (max-width: 991.98px) {
   #header {
     width: 90vw;
@@ -864,11 +861,11 @@ a {
   }
 }
 
-/* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
   main, #box {
     height: 70vh;
   }
+  
   
   .middle h1 {
     font-size: 2.5rem;
@@ -918,6 +915,9 @@ a {
   
   .butt {
     width: 100%;
+  }
+  .footer{
+    margin-top: 5rem;
   }
 }
 
@@ -985,10 +985,6 @@ a {
     gap: 0.5rem;
     margin-bottom: 1rem;
   }
-
-  .footer{
-    margin-top: 7rem;
-  }
 }
 
 
@@ -1031,9 +1027,5 @@ a {
   
   .queries h3 {
     font-size: 1rem;
-  }
-
-  .footer{
-    margin-top: 10rem;
   }
 }
